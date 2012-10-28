@@ -28,12 +28,9 @@ ARTICLE_DIR = 'content'
 AUTHOR = u'BYK'
 AUTHOR_SHORTBIO = '''
 Howdy! I'm a somewhat idealist Software Engineer living in San Francisco 
-and
-born in Turkey, who is extremely enthusiastic about writing clean, 
-reusable and
-maintainable. I LOVE Legos and Python whereas I write JavaScript code 
-for a
-living at <a href="http://disqus.com">DISQUS</a>.
+and born in Turkey, who is extremely enthusiastic about writing clean, 
+reusable and maintainable code. I LOVE Legos and Python whereas I write 
+JavaScript code for a living at <a href="http://disqus.com">DISQUS</a>.
 '''
 AUTHOR_EMAIL = u'ben@byk.im'
 AUTHOR_EMAIL_HASH = md5(AUTHOR_EMAIL).hexdigest()
