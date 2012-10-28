@@ -1,0 +1,309 @@
+body {
+    color: #434343;
+    font: normal 14px 'Carrois Gothic', sans-serif;
+}
+
+a {
+    color: #003153;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    color: #003153;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+header, footer, nav, article, section {
+    display: block;
+    overflow: hidden;
+}
+
+blockquote {
+    background-color: #eaf7ff;
+    border-radius: 10px;
+    border: 1px solid #d1e3ef;
+    border-left-width: 5px;
+    margin: 20px 23px 0 23px;
+}
+
+article address {
+    display: inline;
+}
+
+article footer {
+    background-color: rgb(234, 247, 255);
+    border-radius: 3px;
+    border: 1px solid rgb(209, 227, 239);
+    border-right-width: 5px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-style: italic;
+}
+
+article .body blockquote p {
+    color: #003153;
+    margin-top: 0;
+    padding: 10px 15px;
+}
+
+code {
+    font-family: Source Code Pro, Consolas, Monaco, 'Andale Mono', monospace, serif;
+    line-height: 1.5em;
+}
+
+pre {
+    background-color: #eaf7ff;
+    border: 1px solid #d1e3ef;
+    border-radius: 10px;
+    color: #003153;
+    margin-top: 20px;
+    overflow-x: auto;
+    padding: 10px 20px;
+}
+
+pre code {
+    font-size: 15px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 700px;
+}
+
+header#main {
+    background-color: #fff;
+    border-bottom: 7px solid #003153;
+    display: block;
+    padding-bottom: 6px;
+    width: 100%;
+}
+
+header .logo {
+    padding-top: 11px;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+article > header.float {
+    background: none repeat scroll 0 0 #fff;
+    margin: 0 -8px;
+    overflow: hidden;
+    padding: 0 8px 11px 8px;
+    position: fixed;
+    top: 0;
+    width: 700px;
+    z-index: 999;
+    box-shadow: 0px 6px 10px 0px #888;
+    border-radius: 0 0 5px 5px;
+}
+
+.splash {
+    background-color: #dff2ff;
+    border-bottom: 1px solid #d1e3ef;
+    display: block;
+    padding: 10px 0;
+}
+
+.splash .welcome {
+    color: #333;
+    font-size: 16px;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.content {
+    min-height: 450px;
+    padding: 30px 0;
+}
+
+.content article {
+    margin-bottom: 60px;
+}
+
+.paginator {
+    float: right;
+}
+
+article > header time {
+    color: #666;
+}
+
+article .body {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+article .body h3 {
+    color: #003153;
+    font-size: 21px;
+    margin: 20px 0;
+}
+
+article .body h4 {
+    border-bottom: 1px #ddd solid;
+    color: #2a5e82;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+article .body p {
+    color: #333;
+    margin-top: 20px;
+}
+
+article .body p a {
+    font-weight: bold;
+}
+
+article .body ul {
+    display: block;
+    list-style: square inside;
+    margin: 20px 0 0 25px;
+}
+
+.body ul li {
+    margin-bottom: 10px;
+}
+
+article .body-padding {
+    padding-top: 64px;
+}
+
+article ul.tags {
+    float: right;
+}
+
+.content article .share {
+    margin-top: 25px;
+}
+
+.content .list-archive {
+    border-top: 1px solid #ddd;
+    margin: 20px 0 30px 0;
+}
+
+.list-archive li {
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.list-archive li a {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.list-archive li time {
+    color: #666;
+}
+
+.list-archive li p.archive {
+    margin-top: 10px;
+}
+
+.list-archive li p.archive span {
+    background-color: #eaf7ff;
+    border: 1px groove #d1e3ef;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 3px 9px;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.list-archive li p.body {
+    color: #333;
+    line-height: 21px;
+    margin-top: 8px;
+}
+
+.footnote {
+    border-top: 1px solid #ddd;
+    font-size: 11px;
+    margin-bottom: 25px;
+    padding-top: 5px;
+}
+
+.footnote a {
+    color: #888;
+}
+
+.bottom {
+    background-color: #dff2ff;
+    border-top: 1px solid #d1e3ef;
+    color: #666;
+    padding: 30px 0;
+}
+
+.about h3 {
+    color: #003153;
+    font-size: 20px;
+    margin-left: 72px;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.about p {
+    color: #333;
+    width: 490px;
+    line-height: 22px;
+    margin: 10px 0 0 72px;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.about a {
+    font-weight: bold;
+}
+
+.about .avatar {
+    border-radius: 5px;
+    float: left;
+    position: relative;
+    top: 13px;
+}
+
+.github-badge {
+    float: right;
+    padding-top: 37px;
+}
+
+footer {
+    background-color: #003153;
+    color: #5989ae;
+    padding: 15px 0;
+}
+
+footer .mid-footer {
+    background-color: #eaf7ff;
+    border-top: 1px solid #e1edf5;
+    color: #666;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #8ba8aa;
+}
+
+footer nav {
+    display: inline;
+}
+
+footer span {
+    font-style: italic;
+}
+
+footer nav ul {
+    float: right;
+}
+
+footer nav ul li {
+    float: left;
+    padding-left: 25px;
+}

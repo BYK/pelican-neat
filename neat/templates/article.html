@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title|striptags }}{% endblock %}
+{% block content %}
+<article>
+    <header>
+        {% include "article_header.html" %}
+    </header>
+
+    <div class="body">
+        {{ article.content }}
+    </div>
+
+    {% if article.tags %}
+    <footer>
+        <ul class="tags">{% for tag in article.tags %}
+            <li>
+                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            </li>
+        </ul>{% endfor %}
+    </footer>
+    {% endif %}
+
+    {% if DISQUS_SITENAME %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "{{ article.url }}";
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+            (document.head || document.body).appendChild(dsq);
+        })();
+    </script>
+    {% elif TWITTER_USERNAME %}
+    <div class="share">
+        <a href="https://twitter.com/share" class="twitter-share-button"
+           data-count="horizontal" data-text="{{ article.title|striptags }}"
+           data-via="{{ TWITTER_USERNAME }}">Tweet</a>
+    </div>
+    <script src="//platform.twitter.com/widgets.js"></script>
+    {% endif %}
+</article>
+
+<script>
+    (function () {
+        'use strict';
+        var titleElm = document.querySelector('article > header');
+        var bodyElm = document.querySelector('article > .body');
+        if (!titleElm || !bodyElm)
+            return;
+
+        var limit = titleElm.offsetTop;
+        var titleCls = titleElm.classList;
+        var bodyCls = bodyElm.classList;
+        window.onscroll = function (evt) {
+            var scrollTop = Math.max(document.body.scrollTop,
+                    document.documentElement.scrollTop);
+            if (limit < scrollTop) {
+                titleCls.add('float');
+                bodyCls.add('body-padding');
+            }
+            else {
+                titleCls.remove('float');
+                bodyCls.remove('body-padding');
+            }
+        };
+    })();
+</script>
+{% endblock %}

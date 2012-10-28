@@ -1,0 +1,17 @@
+<h2><a href="{{ article.url }}" rel="bookmark">
+    {{ article.title|striptags }}
+</a></h2>
+<time datetime="{{ article.date }}" pubdate>Posted on
+    {{ article.locale_date }}
+</time>
+{% if article.author %}
+<address class="vcard author">
+    by <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">
+    {{ article.author }}</a>
+</address>
+{% endif %}
+{% if categories|length > 1 %}
+<span class="category">in <a href="{{ SITEURL }}/{{ article.category.url }}">
+    {{ article.category }}</a>.
+        </span>
+{% endif %}

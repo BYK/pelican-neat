@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if articles %}
+    {% for article in articles_page.object_list %}        
+    <article>
+        <header>
+            {% include "article_header.html" %}
+        </header>
+
+        <div class="body">
+            {{ article.summary }}
+        </div>
+
+        {% if DISQUS_SITENAME %}<p>
+            <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">comments</a>
+        </p>{% endif %}
+
+    </article>
+{% endfor %}
+{% endif %}
+{% endblock content %}
+
+{% if articles_page.has_next() or articles_page.has_previous() %}
+{% block footnote %}
+    {% include 'pagination.html' %}
+{% endblock %}
+{% endif %}

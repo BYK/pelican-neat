@@ -1,0 +1,14 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: arial, sans-serif;
+    font-size: 10pt;
+}
+
+header {
+    display: none;
+}
+
+footer {
+    display: none;
+}
