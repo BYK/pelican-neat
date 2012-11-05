@@ -52,16 +52,19 @@
         var limit = titleElm.offsetTop;
         var titleCls = titleElm.classList;
         var bodyCls = bodyElm.classList;
+        var floating = false;
         window.onscroll = function (evt) {
             var scrollTop = Math.max(document.body.scrollTop,
                     document.documentElement.scrollTop);
-            if (limit < scrollTop) {
+            if (!floating && limit < scrollTop) {
                 titleCls.add('float');
                 bodyCls.add('body-padding');
+                floating = true;
             }
-            else {
+            else if (limit >= scrollTop) {
                 titleCls.remove('float');
                 bodyCls.remove('body-padding');
+                floating = false;
             }
         };
     })();
