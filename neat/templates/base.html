@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
         <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
         <meta charset="utf-8" />
@@ -50,17 +51,17 @@
 
     <div class="bottom">
         <div class="container">
-            {% if GITHUB_USERNAME and GITHUB_BADGE %}
-            <div class="github-badge">
-                <iframe src="http://githubbadge.appspot.com/badge/{{ GITHUB_USERNAME }}?s=1"
-                        style="border: 0; height: 150px; width: 200px; overflow: hidden;"></iframe>
-            </div>
-            {% endif %}
             <div class="about">
                 <h3>About me</h3>
                 <img alt="Me!" class="avatar"
                      src="http://www.gravatar.com/avatar/{{ AUTHOR_EMAIL_HASH }}?size=64">
                 <p>{{ AUTHOR_SHORTBIO }}</p>
+                {% if GITHUB_USERNAME and GITHUB_BADGE %}
+                <div class="github-badge">
+                    <iframe src="http://githubbadge.appspot.com/badge/{{ GITHUB_USERNAME }}?s=1"
+                            style="border: 0; height: 150px; width: 200px; overflow: hidden;"></iframe>
+                </div>
+                {% endif %}
                 <p>
                    You can contact me by emailing
                    <a href="mailto:{{ AUTHOR_EMAIL }}">{{ AUTHOR_EMAIL }}</a>.

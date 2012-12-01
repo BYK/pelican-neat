@@ -22,7 +22,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-header, footer, nav, article, section {
+header, footer, nav, article, section, div {
     display: block;
     overflow: hidden;
 }
@@ -76,7 +76,7 @@ pre code {
 
 .container {
     margin: 0 auto;
-    width: 700px;
+    max-width: 700px;
 }
 
 header#main {
@@ -96,12 +96,17 @@ header .logo {
 
 article > header.float {
     background: none repeat scroll 0 0 #fff;
-    margin: 0 -8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     overflow: hidden;
     padding: 0 8px 11px 8px;
     position: fixed;
     top: 0;
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
     z-index: 999;
     box-shadow: 0px 6px 10px 0px #888;
     border-radius: 0 0 5px 5px;
@@ -252,10 +257,18 @@ article ul.tags {
 
 .about p {
     color: #333;
-    width: 490px;
     line-height: 22px;
     margin: 10px 0 0 72px;
     text-shadow: 1px 1px 0 #fff;
+    overflow: hidden;
+    clear: both;
+}
+
+.about .avatar + p {
+    min-width: 200px;
+    width: 55%;
+    float: left;
+    clear: none;
 }
 
 .about a {
@@ -267,11 +280,27 @@ article ul.tags {
     float: left;
     position: relative;
     top: 13px;
+    margin-right: -72px;
 }
 
 .github-badge {
     float: right;
-    padding-top: 37px;
+}
+
+@media screen and (max-width: 622px) {
+    .about .avatar + p {
+        width: auto;
+    }
+    .github-badge {
+        margin: 10px 0 0 72px;
+        float: none;
+        clear: both;
+    }
+
+    .github-badge>iframe {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 footer {
