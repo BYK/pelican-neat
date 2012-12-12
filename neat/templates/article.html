@@ -34,7 +34,7 @@
     {% elif TWITTER_USERNAME %}
     <div class="share">
         <a href="https://twitter.com/share" class="twitter-share-button"
-           data-count="horizontal" data-text="{{ article.title|striptags }}"
+           data-count="horizontal" data-text="{{ article.title|striptags|escape }}"
            data-via="{{ TWITTER_USERNAME }}">Tweet</a>
     </div>
     <script src="//platform.twitter.com/widgets.js"></script>
