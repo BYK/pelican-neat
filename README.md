@@ -14,7 +14,6 @@ Preview
     ![article screenshot](https://github.com/BYK/pelican-neat/raw/master/screenshots/article.png)
   - Article Scrolled:
     ![index screenshot](https://github.com/BYK/pelican-neat/raw/master/screenshots/article-scroll.png)
-  - [Read at BYK's](http://read.byk.im)
 
 Configuration Options
 ---------------------
@@ -37,6 +36,12 @@ Configuration Options
     [GitHub Badge](http://githubbadge.appspot.com) if enabled.
   - `GITHUB_BADGE` _(boolean)_ - Set to `True` if you want to display the badge
     for your `GITHUB_USERNAME` in the bottom right corner of the pages.
+
+Who's Using Neat
+----------------
+
+  - [Read at BYK's](http://read.byk.im)
+  - [web development notes by Murat Çorlu](http://muratcorlu.com/)
 
 License
 -------
