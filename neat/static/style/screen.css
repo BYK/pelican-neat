@@ -102,10 +102,11 @@ article > header.float {
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     overflow: hidden;
-    padding: 0 8px 11px 8px;
+    padding: 0 8px 11px;
     position: fixed;
     top: 0;
-    max-width: 700px;
+    max-width: 716px;
+    margin: 0 -8px;
     width: 100%;
     z-index: 999;
     box-shadow: 0px 6px 10px 0px #888;

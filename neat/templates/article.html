@@ -56,7 +56,7 @@
         window.onscroll = function (evt) {
             var scrollTop = Math.max(document.body.scrollTop,
                     document.documentElement.scrollTop);
-            if (!floating && limit < scrollTop) {
+            if (!floating && limit <= scrollTop) {
                 titleCls.add('float');
                 bodyCls.add('body-padding');
                 floating = true;
