@@ -42,6 +42,7 @@ Who's Using Neat
 
   - [Read at BYK's](http://read.byk.im)
   - [web development notes by Murat Çorlu](http://muratcorlu.com/)
+  - [dominicrodger.com](http://dominicrodger.com)
 
 License
 -------
