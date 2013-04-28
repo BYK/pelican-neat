@@ -1,6 +1,11 @@
 body {
     color: #434343;
     font: normal 14px 'Carrois Gothic', sans-serif;
+    text-align: justify;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hypens: auto;
+    -ms-hyphens: auto;
 }
 
 a {

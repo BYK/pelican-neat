@@ -3,6 +3,11 @@ body {
     color: #000;
     font-family: arial, sans-serif;
     font-size: 10pt;
+    text-align: justify;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hypens: auto;
+    -ms-hypens: auto;
 }
 
 header {
