@@ -20,6 +20,10 @@ h2 {
     color: #003153;
     font-size: 25px;
     margin-bottom: 10px;
+    text-align: start;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 header, footer, nav, article, section, div {
