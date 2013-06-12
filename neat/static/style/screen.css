@@ -117,6 +117,7 @@ article > header.float {
     z-index: 999;
     box-shadow: 0px 6px 10px 0px #888;
     border-radius: 0 0 5px 5px;
+    transition: box-shadow .3s ease-in;
 }
 
 .splash {
