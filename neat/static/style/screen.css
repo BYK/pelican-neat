@@ -1,6 +1,7 @@
 body {
     color: #434343;
     font: normal 14px 'Carrois Gothic', sans-serif;
+    line-height: 22px;
 }
 
 a {
@@ -16,14 +17,21 @@ ul {
     list-style-type: none;
 }
 
-h2 {
+article > header > h2 {
     color: #003153;
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 20px;
     text-align: start;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-bottom: 1px;
+    float: left;
+}
+
+article > header > .meta {
+    float: right;
+    font-style: italic;
+    padding-right: 5px; /*for italic text*/
 }
 
 header, footer, nav, article, section, div {
@@ -37,6 +45,10 @@ blockquote {
     border: 1px solid #d1e3ef;
     border-left-width: 5px;
     margin: 20px 23px 0 23px;
+}
+
+article header {
+    margin: 1px 0 20px;
 }
 
 article address {
@@ -81,60 +93,37 @@ pre code {
 .container {
     margin: 0 auto;
     padding: 0 10px;
-    max-width: 700px;
 }
 
-header#main {
-    background-color: #fff;
-    border-bottom: 7px solid #003153;
+header.main {
+    background-color: #f9f9ff;
+    border-bottom: 8px solid #003153;
     display: block;
-    padding-bottom: 6px;
+    padding: 18px 5px 8px;
     width: 100%;
+    margin-bottom: 22px;
 }
 
 header .logo {
-    padding-top: 11px;
     font-family: 'ABeeZee', sans-serif;
-    font-size: 28px;
+    font-size: 40px;
+    line-height: 44px;
     font-weight: bold;
+    float: left;
 }
 
-article > header.float {
-    background: none repeat scroll 0 0 #fff;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    overflow: hidden;
-    padding: 0 10px 11px;
-    position: fixed;
-    top: 0;
-    max-width: 716px;
-    margin: 0 -10px;
-    width: 100%;
-    z-index: 999;
-    box-shadow: 0px 6px 10px 0px #888;
-    border-radius: 0 0 5px 5px;
-    transition: box-shadow .3s ease-in;
-}
-
-.splash {
-    background-color: #dff2ff;
-    border-bottom: 1px solid #d1e3ef;
-    display: block;
-    padding: 10px 0;
-}
-
-.splash .welcome {
+.tagline {
     color: #333;
     font-size: 16px;
     text-shadow: 1px 1px 0 #fff;
+    float: right;
+    font-style: italic;
+    padding-right: 5px;  /*for italic text*/
+    margin-top: 18px;  /*to get the baseline correct*/
 }
 
 .content {
     min-height: 450px;
-    padding: 30px 10px;
 }
 
 .content article {
@@ -151,7 +140,13 @@ article > header time {
 
 article .body {
     font-size: 16px;
-    line-height: 1.5em;
+            columns: 320px auto;
+       -moz-columns: 320px auto;
+    -webkit-columns: 320px auto;
+        column-fill: auto;
+   -moz-column-fill: auto;
+-webkit-column-fill: auto;
+    height: 55vh;
 }
 
 article .body h3 {
@@ -169,7 +164,8 @@ article .body h4 {
 
 article .body p {
     color: #333;
-    margin-top: 20px;
+    line-height: 21px;
+    margin-bottom: 21px;
 }
 
 article .body p a {
@@ -179,11 +175,11 @@ article .body p a {
 article .body ul {
     display: block;
     list-style: square inside;
-    margin: 20px 0 0 25px;
+    margin: 21px 0 21px 25px;
 }
 
 .body ul li {
-    margin-bottom: 10px;
+    line-height: 21px;
 }
 
 article .body-padding {
@@ -235,17 +231,6 @@ article ul.tags {
     color: #333;
     line-height: 21px;
     margin-top: 8px;
-}
-
-.footnote {
-    border-top: 1px solid #ddd;
-    font-size: 11px;
-    margin-bottom: 25px;
-    padding-top: 5px;
-}
-
-.footnote a {
-    color: #888;
 }
 
 .bottom {

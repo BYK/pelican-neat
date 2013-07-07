@@ -40,33 +40,4 @@
     <script src="//platform.twitter.com/widgets.js"></script>
     {% endif %}
 </article>
-
-<script>
-    (function () {
-        'use strict';
-        var titleElm = document.querySelector('article > header');
-        var bodyElm = document.querySelector('article > .body');
-        if (!titleElm || !bodyElm)
-            return;
-
-        var limit = titleElm.offsetTop;
-        var titleCls = titleElm.classList;
-        var bodyCls = bodyElm.classList;
-        var floating = false;
-        window.onscroll = function (evt) {
-            var scrollTop = Math.max(document.body.scrollTop,
-                    document.documentElement.scrollTop);
-            if (!floating && limit <= scrollTop) {
-                titleCls.add('float');
-                bodyCls.add('body-padding');
-                floating = true;
-            }
-            else if (limit >= scrollTop) {
-                titleCls.remove('float');
-                bodyCls.remove('body-padding');
-                floating = false;
-            }
-        };
-    })();
-</script>
 {% endblock %}
