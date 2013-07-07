@@ -1,6 +1,7 @@
 body {
     color: #434343;
     font: normal 14px 'Carrois Gothic', sans-serif;
+    line-height: 22px;
 }
 
 a {
@@ -18,12 +19,12 @@ ul {
 
 h2 {
     color: #003153;
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 20px;
     text-align: start;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-bottom: 1px;
 }
 
 header, footer, nav, article, section, div {
@@ -37,6 +38,10 @@ blockquote {
     border: 1px solid #d1e3ef;
     border-left-width: 5px;
     margin: 20px 23px 0 23px;
+}
+
+article header {
+    margin: 1px 0 20px;
 }
 
 article address {
@@ -86,19 +91,18 @@ pre code {
 
 header.main {
     background-color: #fff;
-    border-bottom: 7px solid #003153;
+    border-bottom: 8px solid #003153;
     display: block;
-    padding-bottom: 6px;
+    padding: 18px 5px 8px;
     width: 100%;
+    margin-bottom: 22px;
 }
 
 header .logo {
-    padding-top: 11px;
     font-family: 'ABeeZee', sans-serif;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
     float: left;
-    line-height: 1.1;
 }
 
 .tagline {
@@ -108,16 +112,11 @@ header .logo {
     float: right;
     font-style: italic;
     padding-right: 5px;  /*for italic text*/
-    margin-top: 20px;  /*to get the baseline correct*/
+    margin-top: 7px;  /*to get the baseline correct*/
 }
 
 article > header.float {
     background: none repeat scroll 0 0 #fff;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
     overflow: hidden;
     padding: 0 10px 11px;
     position: fixed;
@@ -133,7 +132,6 @@ article > header.float {
 
 .content {
     min-height: 450px;
-    padding: 30px 10px;
 }
 
 .content article {
@@ -150,7 +148,6 @@ article > header time {
 
 article .body {
     font-size: 16px;
-    line-height: 1.5em;
 }
 
 article .body h3 {
@@ -168,7 +165,8 @@ article .body h4 {
 
 article .body p {
     color: #333;
-    margin-top: 20px;
+    line-height: 21px;
+    margin-bottom: 21px;
 }
 
 article .body p a {
@@ -178,11 +176,11 @@ article .body p a {
 article .body ul {
     display: block;
     list-style: square inside;
-    margin: 20px 0 0 25px;
+    margin: 21px 0 21px 25px;
 }
 
 .body ul li {
-    margin-bottom: 10px;
+    line-height: 21px;
 }
 
 article .body-padding {
