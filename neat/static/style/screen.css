@@ -140,9 +140,10 @@ article > header time {
 
 article .body {
     font-size: 16px;
-            column-width: 320px;
-       -moz-column-width: 320px;
-    -webkit-column-width: 320px;
+            columns: 320px auto;
+       -moz-columns: 320px auto;
+    -webkit-columns: 320px auto;
+    min-height: 40vh;
 }
 
 article .body h3 {
