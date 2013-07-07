@@ -17,7 +17,7 @@ ul {
     list-style-type: none;
 }
 
-h2 {
+article > header > h2 {
     color: #003153;
     font-size: 20px;
     text-align: start;
@@ -25,6 +25,13 @@ h2 {
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-bottom: 1px;
+    float: left;
+}
+
+article > header > .meta {
+    float: right;
+    font-style: italic;
+    padding-right: 5px; /*for italic text*/
 }
 
 header, footer, nav, article, section, div {
@@ -86,7 +93,6 @@ pre code {
 .container {
     margin: 0 auto;
     padding: 0 10px;
-    max-width: 700px;
 }
 
 header.main {
@@ -133,6 +139,9 @@ article > header time {
 
 article .body {
     font-size: 16px;
+            column-width: 320px;
+       -moz-column-width: 320px;
+    -webkit-column-width: 320px;
 }
 
 article .body h3 {
