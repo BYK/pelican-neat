@@ -107,6 +107,7 @@ header.main {
 header .logo {
     font-family: 'ABeeZee', sans-serif;
     font-size: 40px;
+    line-height: 44px;
     font-weight: bold;
     float: left;
 }
@@ -118,7 +119,7 @@ header .logo {
     float: right;
     font-style: italic;
     padding-right: 5px;  /*for italic text*/
-    margin-top: 7px;  /*to get the baseline correct*/
+    margin-top: 18px;  /*to get the baseline correct*/
 }
 
 .content {
