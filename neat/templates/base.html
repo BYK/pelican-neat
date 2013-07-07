@@ -39,16 +39,6 @@
         {% block content %}{% endblock %}
     </div>
 
-    <div class="container footnote">
-        {% if PDF_PROCESSOR %}
-        <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
-        {% endif %}
-        {% if PRINT %}
-        <a href="javascript:window.print();" title="Print">Print</a>
-        {% endif %}
-        {% block footnote %}{% endblock %}
-    </div>
-
     <div class="bottom">
         <div class="container">
             <div class="about">

@@ -237,17 +237,6 @@ article ul.tags {
     margin-top: 8px;
 }
 
-.footnote {
-    border-top: 1px solid #ddd;
-    font-size: 11px;
-    margin-bottom: 25px;
-    padding-top: 5px;
-}
-
-.footnote a {
-    color: #888;
-}
-
 .bottom {
     background-color: #dff2ff;
     border-top: 1px solid #d1e3ef;
