@@ -69,11 +69,11 @@
                 <p>
                     {% if TWITTER_USERNAME %}
                     <a href="https://twitter.com/{{ TWITTER_USERNAME }}"
-                       title="@{{ TWITTER_USERNAME }} on Twitter">Follow me on Twitter</a> and
+                       title="@{{ TWITTER_USERNAME }} on Twitter" rel="me">Follow me on Twitter</a> and
                     {% endif %}
                     {% if GITHUB_USERNAME %}
                     <a href="https://github.com/{{ GITHUB_USERNAME }}"
-                       title="{{ GITHUB_USERNAME }}'s Profile">fork me on GitHub</a>!
+                       title="{{ GITHUB_USERNAME }}'s Profile" rel="me">fork me on GitHub</a>!
                     {% endif %}
                 </p>
             </div>
