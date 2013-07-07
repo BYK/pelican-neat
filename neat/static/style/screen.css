@@ -84,7 +84,7 @@ pre code {
     max-width: 700px;
 }
 
-header#main {
+header.main {
     background-color: #fff;
     border-bottom: 7px solid #003153;
     display: block;
@@ -97,6 +97,18 @@ header .logo {
     font-family: 'ABeeZee', sans-serif;
     font-size: 28px;
     font-weight: bold;
+    float: left;
+    line-height: 1.1;
+}
+
+.tagline {
+    color: #333;
+    font-size: 16px;
+    text-shadow: 1px 1px 0 #fff;
+    float: right;
+    font-style: italic;
+    padding-right: 5px;  /*for italic text*/
+    margin-top: 20px;  /*to get the baseline correct*/
 }
 
 article > header.float {
@@ -117,19 +129,6 @@ article > header.float {
     box-shadow: 0px 6px 10px 0px #888;
     border-radius: 0 0 5px 5px;
     transition: box-shadow .3s ease-in;
-}
-
-.splash {
-    background-color: #dff2ff;
-    border-bottom: 1px solid #d1e3ef;
-    display: block;
-    padding: 10px 0;
-}
-
-.splash .welcome {
-    color: #333;
-    font-size: 16px;
-    text-shadow: 1px 1px 0 #fff;
 }
 
 .content {

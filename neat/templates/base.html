@@ -21,19 +21,10 @@
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-    <header id="main">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html" title="Home">{{ SITENAME }}</a>
-            </div>
-        </div>
+    <header class="main">
+        <a class="logo" href="index.html" title="Home">{{ SITENAME }}</a>
+        <span class="tagline">{{ SITE_TAGLINE }}</span>
     </header>
-
-    <div class="splash">
-        <div class="container">
-            <div class="welcome">{{ SITE_TAGLINE }}</div>
-        </div>
-    </div>
 
     <div class="container content">
         {% block content %}{% endblock %}
