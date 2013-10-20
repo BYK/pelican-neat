@@ -24,7 +24,7 @@
     <header id="main">
         <div class="container">
             <div class="logo">
-                <a href="index.html" title="Home">{{ SITENAME }}</a>
+                <a href="{{ SITEURL }}/index.html" title="Home">{{ SITENAME }}</a>
             </div>
         </div>
     </header>
@@ -90,7 +90,7 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="archives.html" title="Archive"><strong>Archive</strong></a></li>
+                    <li><a href="{{ SITEURL }}/archives.html" title="Archive"><strong>Archive</strong></a></li>
                     {% if SITE_SOURCE %}
                     <li><a href="{{ SITE_SOURCE }}" title="Source code">Source code</a></li>
                     {% endif %}
