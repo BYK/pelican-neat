@@ -1,6 +1,6 @@
 body {
     color: #434343;
-    font: normal 14px 'Carrois Gothic', sans-serif;
+    font: normal 14px 'Droid Sans', sans-serif;
     line-height: 22px;
 }
 
@@ -105,7 +105,7 @@ header.main {
 }
 
 header .logo {
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Droid Serif', serif;
     font-size: 40px;
     line-height: 44px;
     font-weight: bold;
