@@ -22,7 +22,7 @@
 </head>
 <body>
     <header class="main">
-        <a class="logo" href="index.html" title="Home">{{ SITENAME }}</a>
+        <a class="logo" href="{{ SITEURL }}/index.html" title="Home">{{ SITENAME }}</a>
         <span class="tagline">{{ SITE_TAGLINE }}</span>
     </header>
 
@@ -43,10 +43,12 @@
                             style="border: 0; height: 150px; width: 200px; overflow: hidden;"></iframe>
                 </div>
                 {% endif %}
+                {% if AUTHOR_EMAIL %}
                 <p>
                    You can contact me by emailing
                    <a href="mailto:{{ AUTHOR_EMAIL }}" rel="me">{{ AUTHOR_EMAIL }}</a>.
                 </p>
+                {% endif %}
                 <p>
                     {% if TWITTER_USERNAME %}
                     <a href="https://twitter.com/{{ TWITTER_USERNAME }}"
@@ -69,7 +71,7 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="archives.html" title="Archive"><strong>Archive</strong></a></li>
+                    <li><a href="{{ SITEURL }}/archives.html" title="Archive"><strong>Archive</strong></a></li>
                     {% if SITE_SOURCE %}
                     <li><a href="{{ SITE_SOURCE }}" title="Source code">Source code</a></li>
                     {% endif %}
